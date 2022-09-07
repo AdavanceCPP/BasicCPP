@@ -1,0 +1,121 @@
+
+
+kernel: collection components( several programs)
+			process management, memory management, file management...
+		 :system calls + data structres+headers+file systems+ device drivers
+
+os : kernel + utilities + ui
+
+struct in c  struct in c++
+data           data + functions
+
+Access specifiers
+
+Members of structure can be 
+private: visible with in a structure
+public: visible outside a structure
+protected: will be discussed during inheritance
+
+Modularity:
+applications can be divided into modules
+
+Stack App:
+
+stack.h
+stack.c
+StackApp.c
+
+object : real world entity,which has
+			identity
+			state
+			characteristics
+			behaviour
+
+
+class: blue print of an object
+		 defines the characteristics and behaviour of an object
+		 data (to represent state/identity..)
+		 functions( member function or method)
+
+
+
+class Car
+{
+	int vno;
+	int gears;
+	int doors;
+	int currentGear;
+	double speed;
+	int state;
+
+	void startEngine()
+	{
+	}
+	void changeGear()
+	{
+	}
+};
+
+
+Types of object:
+
+Global objects ( objects created out of any function)
+Local objects ( objects created with in a function)
+Heap based objects
+
+class 
+		Members: Data & methods
+
+Function overloading (polymorphic feature)
+
+defining multiple functions with same name
+
+Rules of function overloading
+	i) number of arguments
+	ii) type of arguments
+	iii) order of passing arguments
+one can overload a function to any number as long as there is no confusion
+
+Types of function
+Non member function
+Member function(method)
+
+Non member function: a function which is defined outside a class
+Member function(method): function defined within a class
+
+static data
+static method
+const method
+
+
+static data
+a data which is common for all objects a particular class
+
+initialize static data
+
+data_type   className::varName=912;
+
+int  Plot::cityCode = 912;
+
+
+static method:
+
+a method which can access only static data
+a method which can called without object
+
+
+Timings:
+9:15
+break 10:45
+session2: 11
+lunch break: 12:30 to 1:30
+break: 3:00
+session 3:3: 15
+
+
+
+
+
+
+
+
