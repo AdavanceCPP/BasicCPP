@@ -1,0 +1,131 @@
+
+Timings:
+9:15
+break 10:45
+session2: 11
+lunch break: 12:30 to 1:30
+break: 3:00
+session 3:3: 15
+
+Recap
+limitation of C programming
+i) lack of data security
+ii) no object level reusability
+iii)operations performed on built types cannot done on user defined type
+
+C++
+Encapsulation: binding related data and functions together and securing the data
+              by using class/structure
+
+
+Methods
+static methods
+	can access only static data
+	can be called with out an object
+	cannot access non-static data
+non static methods
+	called through object
+	can access both static and non static data
+
+static data:
+	is common to all the objects
+	modification done by one object is reflect in another object
+	must be initialzed in global space
+
+const method:
+
+	read only method
+	which can read the data member but cannot modify the data member
+
+Constructor
+
+	a special method	
+	it will have the same name of that particular class
+	constructors are called implicitly after the creation of an object
+	constructor may or may not take arguments
+	constructor does not have return type
+	constructors can be overloaded 
+	constructors are called only once, when an object is created
+	
+why constructors?
+	to initialize data members of an object
+
+Types of constructors
+	i) Default constructor
+	ii) Parameterized constructor ( N argument )
+  iii) Copy Constructor
+	
+	i) Default constructor
+		which does not take any argument
+		Plot()
+		{
+			initilized data members
+		//acquire some resources (memory, devices, file open...)
+		}
+
+	Destructor:
+	
+		are implicitly called, when object looses it's scope
+		it will have the same name as that of class, prefixed by ~
+		~Plot()
+		{
+			//release the acquired resources
+
+		}
+		compiler would add destructor for every class, and programmer can
+		override the existing destructor
+
+this pointer
+
+	"this" is a pointer to an object
+	holds address of the object through which that method is called
+
+
+References
+
+non constant pointer to non constatnt data
+non constant pointer to constant data
+constant pointer to non constatnt data
+int x = 10;
+int *const p = x;
+printf("%d",*p)
+constant pointer to  constatnt data
+
+
+int i=10;                int i = 10;
+
+int *p = &i;             int &p = i;
+
+ *p = 50;						 p = 50;
+printf("%d\n",i)       printf("%d\n",i)
+
+advantage of references
+effecient way of data tranfer from one fun to another
+
+Operator Overloading
+
+friend function:
+a class can allow non member function to access it's private member
+by considering non-member function as it's friend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
