@@ -1,0 +1,89 @@
+
+Dynamic memory allocation in C++
+
+ C                 C++
+
+malloc             new 
+
+why new over malloc?
+
+
+malloc()                                       new
+int *p;														int *p;
+p = (int *)malloc(sizeof(int))				p = new int;
+
+size needs to be specified                no need to specify the size
+requires type casting                     does not require type casting
+does not call constructor                    calls appropriate constructor
+
+class Plot
+{
+	int wid;
+	int len;
+	double area;
+	void get()
+	{
+	}
+};
+__________________________
+name     type     offset
+__________________________
+wid      int      0
+len      int      4
+area    double    8
+                ______
+					  | 16  |
+
+
+Plot p1;
+
+6000    6004    6008
+____________________
+|							|
+|__________________|
+
+		void get( Plot *this)
+			Plot *this = &p1;
+p1.get()	=> p1.get(&p1) 
+			=> p1.get(6000),
+
+Plot *p2; 
+p2 = new Plot(50)
+void get( Plot *this)
+			Plot *this =p2;
+
+7000
+_______________
+|_____________|
+
+p2->get() =>  p2->get(p2)
+					p2->get(7000)
+
+Symbol Table
+
+Name    type    address
+p1     Plot     6000
+
+
+p1.wid = 50;
+p1.len = 80;
+p1.area = 4000
+
+6000+8
+
+Reusability
+
+virutal keyword uses
+i) to define virtual function
+ii) to define pure virtual function
+	
+
+
+
+
+
+
+
+
+
+
