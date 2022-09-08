@@ -1,0 +1,67 @@
+class abc
+{
+};
+
+class def
+{
+	friend class abc;
+};
+one class can consider another class as it's friend
+int the above example, all the methods of def can access private data of abc class
+
+Shallow copy
+ 
+when class has pointer as a datamember,
+the builtin copy constructor and overloaded assignment operator
+methods copies the pointer and not the data to which it points
+hence, if one object modifies the data, it is reflected in anohter
+object.
+
+namespace
+to avoid name collisions
+collection classes and objects
+user defined namespace
+
+Threads
+thread creation faster compared to processs creation
+thread termination faster compared to processs termination
+thread communication faster compared to processs communication
+
+threads within a process shares
+data segment
+heap segment
+text segment
+opened files
+devices
+
+each thread with in a process have it's 
+statck segment (sp)
+
+
+templates
+are used to write generic programs
+
+generic to data type
+writing a code independent of data type
+
+template,class,typename
+class template:generic class
+function template: generic function
+send the feedback
+vishwakirana@gmail.com
+vishwakiran@bmsit.in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
