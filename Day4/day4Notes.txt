@@ -1,0 +1,11 @@
+virtual keywords
+
+free(3)       delete 
+function      operator
+
+Error handling
+
+try -> block
+catch->block
+throw ->statement
+
